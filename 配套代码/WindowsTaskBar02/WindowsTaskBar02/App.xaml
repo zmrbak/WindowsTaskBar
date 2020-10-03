@@ -1,0 +1,34 @@
+﻿<Application
+    x:Class="WindowsTaskBar02.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:WindowsTaskBar02"
+    StartupUri="MainWindow.xaml">
+    <Application.Resources />
+    <JumpList.JumpList>
+        <JumpList
+            JumpItemsRejected="JumpList_JumpItemsRejected"
+            JumpItemsRemovedByUser="JumpList_JumpItemsRemovedByUser"
+            ShowFrequentCategory="True"
+            ShowRecentCategory="True">
+            <JumpTask
+                Title="Read Me 1"
+                ApplicationPath="C:\Windows\notepad.exe"
+                Arguments="readme.txt"
+                CustomCategory="DEMO 1"
+                Description="Open readme.txt in Notepad."
+                IconResourceIndex="14"
+                IconResourcePath="C:\Windows\System32\imageres.dll"
+                WorkingDirectory="C:\Users\Public\Documents" />
+            <JumpTask
+                Title="Read Me 2"
+                ApplicationPath="C:\Windows\notepad.exe"
+                Arguments="readme.txt"
+                CustomCategory="DEMO 2"
+                Description="Open readme.txt in Notepad."
+                IconResourceIndex="15"
+                IconResourcePath="C:\Windows\System32\imageres.dll"
+                WorkingDirectory="C:\Users\Public\Documents" />
+        </JumpList>
+    </JumpList.JumpList>
+</Application>
