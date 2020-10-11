@@ -1,0 +1,25 @@
+﻿<Window
+    x:Class="WindowsTaskBar10.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WindowsTaskBar10"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="364"
+    Height="207"
+    Icon="TaskPaneImage.ico"
+    Loaded="Window_Loaded"
+    mc:Ignorable="d">
+    <DockPanel>
+        <Button
+            Click="Button_Click"
+            Content="Add"
+            DockPanel.Dock="Top" />
+        <TextBlock
+            x:Name="textBlock"
+            Text="TextBlock"
+            TextWrapping="Wrap" />
+
+    </DockPanel>
+</Window>
