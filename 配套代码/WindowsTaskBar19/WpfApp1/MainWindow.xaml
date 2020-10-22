@@ -1,0 +1,50 @@
+﻿<Window
+    x:Class="WpfApp1.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfApp1"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="479"
+    Height="392"
+    mc:Ignorable="d">
+    <Window.Resources>
+        <DrawingImage x:Key="ImageStop">
+            <DrawingImage.Drawing>
+                <GeometryDrawing Brush="Gray" Geometry="M0,0 L100,0 L100,100 L0,100 z" />
+            </DrawingImage.Drawing>
+        </DrawingImage>
+        <DrawingImage x:Key="ImagePlay">
+            <DrawingImage.Drawing>
+                <GeometryDrawing Brush="Green" Geometry="M0,0 L100,50 L0,100 z" />
+            </DrawingImage.Drawing>
+        </DrawingImage>
+    </Window.Resources>
+    <Grid>
+        <Path
+            Width="40.889"
+            Height="40.889"
+            Margin="44.889,74.333,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Data="M0,0 L40.889,0 L40.889,40.889 L0,40.889 z"
+            Fill="Gray"
+            Stretch="Fill" />
+        <Rectangle
+            Width="40.889"
+            Height="40.889"
+            Margin="99.111,74.333,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Fill="#FFF4F4F5"
+            Stroke="Black" />
+        <Image
+            Width="50.333"
+            Height="50.333"
+            Margin="176,75,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Source="{DynamicResource ImagePlay}" />
+    </Grid>
+</Window>
